@@ -155,6 +155,7 @@ class GyroscopeSensor : AwareSensor(), SensorEventListener {
 
         val device = GyroscopeDevice().apply {
             deviceId = CONFIG.deviceId
+            label = CONFIG.label
             timestamp = System.currentTimeMillis()
 
             maxRange = sensor.maximumRange
